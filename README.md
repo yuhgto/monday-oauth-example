@@ -1,4 +1,4 @@
-# diprOAuth.io
+# monday OAuth Example
 sample server code for mdc oauth
 
 ## What it is
