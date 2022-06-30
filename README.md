@@ -22,20 +22,22 @@ This demo will create a server to go through the OAuth flow in monday.com. To se
 
    ![ngrok screenshot](/assets/ngrok_screenshot.png)
 
-3.   Register your monday app using [these instructions](https://gist.github.com/yuhgto/24c0e08fe11fddedf1c9b3b12a514dcf).
+3. Register your monday app using [these instructions](https://gist.github.com/yuhgto/24c0e08fe11fddedf1c9b3b12a514dcf).
 
-    a. Add your redirect URI to your monday app. If you're using ngrok, this should look something like `mytunnel1234.ngrok.io/oauth/callback`.
+  4. Add your redirect URI to the "OAuth" tab of your monday app. If you're using ngrok, this should look something like `mytunnel1234.ngrok.io/oauth/callback`.
 
-    b. Add the following scopes: `me:read, boards:read`
+  5. Add the following scopes to your app: `me:read, boards:read`
+    
+  6. Copy your app's client ID and client secret. 
 
-    c. Add your client ID, client secret, and redirect URI to the `index.js` file:
+7. Adjust the code to connect to your Add your client ID, client secret, and redirect URI to the `index.js` file ([lines 17-19](https://github.com/yuhgto/monday-oauth-example/blob/a9fd534885143ebc728025f3be34dbac65be18d4/index.js#L17-L19)):
     ```
     var client_id = 'CLIENT_ID';
     var client_secret = 'CLIENT_SECRET';
     var redirect_uri = 'REDIRECT_URI';
     ```
 
-4. Navigate to your app's public URL, and hit begin!
+8. Navigate to your app's public URL, and hit begin!
 
 ## Why it works
 
